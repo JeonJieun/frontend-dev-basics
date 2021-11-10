@@ -28,7 +28,12 @@ $(function(){
 	$("#btn-change").click(function(){
 		// 랜덤 변수 
 		var result = Math.floor(Math.random() * images.length);  // 0 ~ 7
-		console.log(result);
+		var str = images[result].split(":");
+		$("img")
+		.attr({
+			 src : "images/" + str[1],
+			 alt : str[0]
+		});
 	});
 });
 </script>
@@ -40,7 +45,9 @@ $(function(){
 			<button id="btn-slideshow">슬라이드쇼 시작</button>
 		</div>
 		<div>
-			<img/>
+			<p>
+				<img src="" alt=""/>
+			</p>
 		</div>
 	</div>
 </body>

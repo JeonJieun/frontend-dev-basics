@@ -10,6 +10,6 @@ var ImageViewer = {
 		"툴립:Tulips.jpg"
 	],
 	init: function() {
-
+		
 	}	
-} 
+}

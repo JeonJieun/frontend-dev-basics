@@ -41,17 +41,15 @@ $(function(){
 
 	async function load(){
 		
-			for(var i = 0; i%=images.length, i<images.length; i++){
+		for(var i = 0; i%=images.length, i<images.length; i++){
 				
-				await timer(1000);
-				var str = images[i].split(":");
-				$("img")
-					.attr({
-			 			src : "images/" + str[1],
-			 			alt : str[0]
-					});
-				
-				console.log(str[1]);
+			await timer(1000);
+			var str = images[i].split(":");
+			$("img")
+				.attr({
+					src : "images/" + str[1],
+			 		alt : str[0]
+				});
 			}
 	};
 	

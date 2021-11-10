@@ -35,6 +35,32 @@ $(function(){
 			 alt : str[0]
 		});
 	});
+	
+	
+	const timer = ms=>new Promise(res=>setTimeout(res, ms));
+
+	async function load(){
+		
+			for(var i = 0; i%=images.length, i<images.length; i++){
+				
+				await timer(1000);
+				var str = images[i].split(":");
+				$("img")
+					.attr({
+			 			src : "images/" + str[1],
+			 			alt : str[0]
+					});
+				
+				console.log(str[1]);
+			}
+	};
+	
+	$("#btn-slideshow").click(function(){
+		load();
+	});
+	
+	
+		
 });
 </script>
 </head>

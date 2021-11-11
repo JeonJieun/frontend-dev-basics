@@ -12,7 +12,7 @@
 $(function(){
 	$("button").click(function(){
 		$.ajax({
-			url: "${pageContext.request.contextPath }/api/json",
+			url: "${pageContext.request.contextPath }/api/json", //서버에서 내려오는 값 "${pageContext.request.contextPath }/api/json" jquery가 아님
 			async: true,
 			type: 'get',
 			dataType: 'json',
